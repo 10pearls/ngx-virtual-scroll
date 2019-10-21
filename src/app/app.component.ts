@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { data } from './data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'VirtualScroll';
+  data = data;
+  viewportItems: Array<any>;
+
+
+  onViewportItemChange(items: Array<any>) {
+    this.viewportItems = items;
+  }
+
+  onScrollEnd() {
+
+  }
+
+
+  trackByItemId(index: number, item: any) {
+    return item._id;
+  }
 }

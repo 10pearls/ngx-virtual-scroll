@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-vscroll": [
+        "dist/ngx-vscroll"
+      ],
+      "ngx-vscroll/*": [
+        "dist/ngx-vscroll/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

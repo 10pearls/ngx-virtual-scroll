@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "NgxVScroll": {
+      "projectType": "library",
+      "root": "projects/ngx-vscroll",
+      "sourceRoot": "projects/ngx-vscroll/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-vscroll/tsconfig.lib.json",
+            "project": "projects/ngx-vscroll/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-vscroll/src/test.ts",
+            "tsConfig": "projects/ngx-vscroll/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-vscroll/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-vscroll/tsconfig.lib.json",
+              "projects/ngx-vscroll/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "VirtualScroll"
 }

@@ -1,0 +1,6 @@
+<div #scrollParent class="scroll-parent" (scroll)="onScroll();">
+  <div #scrollItems class="scroll-items">
+    <ng-content></ng-content>
+  </div>
+  <div class="scroll-size" [style.height.px]="scrollHeight"></div>
+</div>
