@@ -1,0 +1,21 @@
+{
+  "name": "ngx-vscroll",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  },
+  "main": "bundles/ngx-vscroll.umd.js",
+  "module": "fesm5/ngx-vscroll.js",
+  "es2015": "fesm2015/ngx-vscroll.js",
+  "esm5": "esm5/ngx-vscroll.js",
+  "esm2015": "esm2015/ngx-vscroll.js",
+  "fesm5": "fesm5/ngx-vscroll.js",
+  "fesm2015": "fesm2015/ngx-vscroll.js",
+  "typings": "ngx-vscroll.d.ts",
+  "metadata": "ngx-vscroll.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
